@@ -1,0 +1,22 @@
+[
+  {
+    "id": "01",
+    "name": "Programme intro",
+    "text": "大家好，歡迎收聽我地嘅新節目《AI Unbox》。今日我地黎傾下微軟最新嘅宣佈：Trustworthy AI。"
+  },
+  {
+    "id": "02",
+    "name": "Pronunciation stress",
+    "text": "係呢條黃巷既巷口度有一隻狗，佢個名叫做黃汗寒狼。大家或者會覺得好奇怪，點解呢一隻狗會有一個咁得意既名呢？講起上黎，其實係有段古既。話說係東方有一個叫做黃汗寒狼牛牙雅夏蝦既國家，呢個國家既人都好鍾意養狗既，佢地養大既狗仲好靚同埋好強壯，但係佢地飼養狗既飼料同一般既都好唔同．原來佢地係用黃汗寒狼焊汗糠黎到養既，養大既狗仲吸引左各國各地既人黎購買添！其中以壓乞黑國、很肯國、特突國、能單騰國、華滑挖國、心足縮學咢確國、等登燈等國既人最多。而頭先我地所講既黃汗寒狼，呢種咁昂貴既狗，就係呢個國家所出產架啦。"
+  },
+  {
+    "id": "03",
+    "name": "Office code-switching",
+    "text": "我啱啱check咗今日個schedule，朝早十點有個project meeting。你記得meeting之前send份final version畀我，因為個client下晝就要confirm所有details。"
+  },
+  {
+    "id": "04",
+    "name": "Long-form mixed narration",
+    "text": "今日返到office之後，我第一時間開email check下有冇urgent message。跟住project manager話個client想改部分requirements，所以我哋臨時安排咗一個meeting。大家討論咗差唔多一個鐘，最後決定先做一個prototype，下星期再demo畀client睇。雖然個schedule有啲tight，但係成個team都覺得呢個approach比較practical。"
+  }
+]

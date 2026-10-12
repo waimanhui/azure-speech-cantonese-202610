@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cantonese listening report for Azure AI Speech voice families.">
+  <title>Cantonese Voice Field Notes</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23141414'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='42' fill='%23d8ff3e'%3E%E7%B2%B5%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261012-8">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="hero">
+    <nav class="topbar" aria-label="Page sections">
+      <a class="brand" href="#top"><span>粵</span> Voice Field Notes</a>
+      <div class="nav-links">
+        <a href="#matrix">Listen</a>
+        <a href="#cases">Test cases</a>
+        <a href="#insights">Insights</a>
+        <a href="#notes">Notes</a>
+      </div>
+    </nav>
+
+    <div class="hero-grid" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Azure AI Speech · Cantonese baseline study</p>
+        <h1>One language.<br><em>Four voice families.</em></h1>
+        <p class="dek">
+          A listening-first report across 170 voices and four fixed Cantonese test cases.
+          Every sample uses neutral SSML with the entire passage marked <code>zh-HK</code>.
+        </p>
+        <p class="test-date">Testing completed on 11 October 2026.</p>
+        <a class="primary-link" href="#matrix">Open the listening matrix <span>↓</span></a>
+      </div>
+      <div class="hero-scorecard" aria-label="Report totals">
+        <div class="score-main">
+          <strong id="voice-total">170</strong>
+          <span>voices tested</span>
+        </div>
+        <dl>
+          <div><dt>Families</dt><dd>04</dd></div>
+          <div><dt>Test cases</dt><dd>04</dd></div>
+          <div><dt>Playable files</dt><dd id="audio-total">680</dd></div>
+          <div><dt>SSML locale</dt><dd>zh-HK</dd></div>
+        </dl>
+        <div class="wave-mark" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="matrix-section" id="matrix">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">01 / Listening matrix</p>
+          <h2>Hear every result.</h2>
+        </div>
+        <p>Filter the ledger, then select any numbered play control. Only one sample plays at a time.</p>
+      </div>
+
+      <div class="filter-panel">
+        <div class="family-filters" id="family-filters" aria-label="Filter by voice family"></div>
+        <label class="search-field">
+          <span>Search voices</span>
+          <input id="voice-search" type="search" placeholder="Name, locale, gender…" autocomplete="off">
+        </label>
+      </div>
+
+      <div class="table-meta">
+        <p><strong id="visible-count">170</strong> voices shown</p>
+        <p><span class="status-dot"></span> General availability <span class="status-dot preview"></span> Preview</p>
+      </div>
+
+      <div class="table-shell">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Voice</th>
+              <th scope="col">Family</th>
+              <th scope="col">Locale</th>
+              <th scope="col" class="case-head"><span>01</span> Intro</th>
+              <th scope="col" class="case-head"><span>02</span> Stress</th>
+              <th scope="col" class="case-head"><span>03</span> Office</th>
+              <th scope="col" class="case-head"><span>04</span> Long form</th>
+            </tr>
+          </thead>
+          <tbody id="voice-table-body"></tbody>
+        </table>
+      </div>
+      <p class="table-footnote">Missing files are marked with a dash.</p>
+    </section>
+
+    <section class="cases-section" id="cases">
+      <div class="section-heading light-heading">
+        <div>
+          <p class="kicker">02 / Test protocol</p>
+          <h2>Four passages,<br>four kinds of pressure.</h2>
+        </div>
+        <p>The same source text is used for every voice, keeping family comparisons focused on the model rather than the prompt.</p>
+      </div>
+      <div class="case-grid">
+        <article class="case-card"><span>01</span><h3>Programme intro</h3><p>Short Cantonese presentation with English title and product terminology.</p><blockquote lang="zh-HK">大家好，歡迎收聽我地嘅新節目《AI Unbox》。今日我地黎傾下微軟最新嘅宣佈：Trustworthy AI。</blockquote></article>
+        <article class="case-card"><span>02</span><h3>Pronunciation stress</h3><p>Long, dense Cantonese with repeated near-homophones and uncommon combinations.</p><blockquote lang="zh-HK">係呢條黃巷既巷口度有一隻狗，佢個名叫做黃汗寒狼。大家或者會覺得好奇怪，點解呢一隻狗會有一個咁得意既名呢？講起上黎，其實係有段古既。話說係東方有一個叫做黃汗寒狼牛牙雅夏蝦既國家，呢個國家既人都好鍾意養狗既，佢地養大既狗仲好靚同埋好強壯，但係佢地飼養狗既飼料同一般既都好唔同．原來佢地係用黃汗寒狼焊汗糠黎到養既，養大既狗仲吸引左各國各地既人黎購買添！其中以壓乞黑國、很肯國、特突國、能單騰國、華滑挖國、心足縮學咢確國、等登燈等國既人最多。而頭先我地所講既黃汗寒狼，呢種咁昂貴既狗，就係呢個國家所出產架啦。</blockquote><p class="case-credit">Source: <a href="https://cantonesemuseum.blogspot.com/2017/09/blog-post_61.html" target="_blank" rel="noopener noreferrer">Cantonese Museum — original article</a></p></article>
+        <article class="case-card"><span>03</span><h3>Office code-switching</h3><p>Compact workplace dialogue with English verbs, nouns, and compound phrases.</p><blockquote lang="zh-HK">我啱啱check咗今日個schedule，朝早十點有個project meeting。你記得meeting之前send份final version畀我，因為個client下晝就要confirm所有details。</blockquote></article>
+        <article class="case-card"><span>04</span><h3>Long-form mixed narration</h3><p>Sustained English–Cantonese switching to expose pacing and continuity issues.</p><blockquote lang="zh-HK">今日返到office之後，我第一時間開email check下有冇urgent message。跟住project manager話個client想改部分requirements，所以我哋臨時安排咗一個meeting。大家討論咗差唔多一個鐘，最後決定先做一個prototype，下星期再demo畀client睇。雖然個schedule有啲tight，但係成個team都覺得呢個approach比較practical。</blockquote></article>
+      </div>
+    </section>
+
+    <section class="insights-section" id="insights">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">03 / General insight</p>
+          <h2>What to listen for.</h2>
+        </div>
+        <p>These are evaluation lenses, not final rankings. Listening notes should decide the shortlist.</p>
+      </div>
+      <div class="insight-layout">
+        <article class="insight-lead">
+          <span class="big-number">680</span>
+          <h3>playable baseline samples</h3>
+          <p>Neutral family-wide testing makes model character audible before styles, prosody, or generative controls are introduced.</p>
+        </article>
+        <div class="insight-list">
+          <article><span>01</span><div><h3>Native accent before fidelity</h3><p>A polished voice is not automatically convincing Cantonese. Prioritise tones, particles, rhythm, and Hong Kong code-switching.</p></div></article>
+          <article><span>02</span><div><h3>English transitions matter</h3><p>Cases 03 and 04 reveal whether English insertions remain fluid or interrupt Cantonese cadence.</p></div></article>
+          <article><span>03</span><div><h3>Long-form stability separates models</h3><p>Listen for persona drift, rushed clauses, unexpected pauses, and declining clarity near the end of case 04.</p></div></article>
+          <article><span>04</span><div><h3>Tune only after shortlisting</h3><p>Compare baseline quality first. Apply temperature, top-p, styles, or prosody only to the strongest candidates.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="notes-section" id="notes">
+      <div class="section-heading light-heading">
+        <div>
+          <p class="kicker">04 / Commentary</p>
+          <h2>Notes for the audience.</h2>
+        </div>
+        <div>
+          <p>Subjective listening observations from the four Cantonese test cases. Results may vary with different text, speaking styles, and synthesis settings.</p>
+        </div>
+      </div>
+      <div class="notes-grid" id="notes-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Cantonese Voice Field Notes</p>
+    <p>Testing completed 11 October 2026 · Static report prepared for GitHub Pages</p>
+  </footer>
+
+  <aside class="player-dock" id="player-dock" aria-live="polite">
+    <button class="dock-play" id="dock-play" type="button" aria-label="Play or pause current sample">▶</button>
+    <div class="dock-meta">
+      <span id="dock-case">Select a sample</span>
+      <strong id="dock-title">No audio loaded</strong>
+    </div>
+    <label class="dock-progress" aria-label="Audio position">
+      <input id="dock-progress" type="range" min="0" max="0" value="0" step="0.01" disabled>
+    </label>
+    <time id="dock-time">0:00 / 0:00</time>
+    <button class="dock-close" id="dock-close" type="button" aria-label="Close audio player">×</button>
+    <audio id="audio-player" preload="auto"></audio>
+  </aside>
+
+  <script src="data.js?v=20261012-8"></script>
+  <script src="app.js?v=20261012-8"></script>
+</body>
+</html>
